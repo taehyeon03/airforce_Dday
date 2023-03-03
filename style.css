@@ -39,7 +39,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items:self-start;
+    align-items:start;
     
 }
 .ddays>p{
@@ -60,4 +60,46 @@ body{
 }
 .ddays>p1{
     margin-top: 70%;
+}
+@media (min-width: 1200px) {
+    .Title{
+        font-size: 50px;
+       
+    }
+
+    .ddays{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        
+    }
+    .ddays>p{
+     
+        border-radius: 4px;
+        font-size: 30px;
+        font-weight: bold;
+                    
+    }
+    .text_first{
+        margin-bottom: 1px;
+    }
+    #enter{
+        margin-top: 7px;
+    }
+    #count{
+        margin-top: 100px;
+    }
+    .ddays>p1{
+        margin-top: 70%;
+    }
+    .img_airforce{
+        width: 150px;
+        height: 150px;
+       margin-top: 10px;
+    }
+    .ddays>p{
+        width: 600px;
+    }
 }
