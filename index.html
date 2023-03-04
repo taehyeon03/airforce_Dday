@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Taehyeon's_D_Day" />
     <meta property="og:description" content="D_day" />
-    <meta property="og:image" content="progile.jpg" />
+    <meta property="og:image" content="profile.jpg" />
     <title>D-Day</title>
     <link rel="stylesheet" href="style.css">
 
@@ -39,16 +39,16 @@
 
 
 <script>
-    const goalDate = new Date("2025-01-23");
+    const goalDate = new Date("2025-01-23T00:00+0900");
     
 function calcDate() {
-    const now = new Date();
-    const distance = goalDate - now;
+    const nows = new Date();
+    const distance = goalDate - nows;
    
 
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
-    var minutes = Math.floor((distance %(1000*60*60))/(1000*60));
+    var minutes = Math.floor(distance %(1000*60*60)/(1000*60));
     var seconds = Math.floor((distance % (1000*60)/1000));
    
 
@@ -68,15 +68,16 @@ setInterval(() => {
 </script>
 
 <script>
-    const enterDate = new Date("2023-04-24");
+    const enterDate = new Date("2023-03-05T00:00+0900");
     function calccDate() {
+    
     const now = new Date();
-    const distance = enterDate - now;
+    const distance = enterDate.getTime()-now.getTime();
    
 
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
-    var minutes = Math.floor(distance %((1000*60*60))/(1000*60));
+    var minutes = Math.floor(distance %(1000*60*60)/(1000*60));
     var seconds = Math.floor((distance % (1000*60)/1000));
    
 
