@@ -28,11 +28,10 @@
             <p class="text_first"> 공군 기본군사훈련단</p>
             <p id="enter"> "0일 0시 0분 0 초" </p>
             <p id="count"> "0일 0시 0분 0 초" </p>
-            <p1 class="pass"> 이 또한 지나가리라 가겠지?</p>
+            <marquee direction=right class="pass">이 또한 지나가리라 가겠지?</marquee>
+            
         </div>
-    
     </div>
-    
 </body>
 </html>
 
@@ -50,12 +49,14 @@ function calcDate() {
     var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
     var minutes = Math.floor(distance %(1000*60*60)/(1000*60));
     var seconds = Math.floor((distance % (1000*60)/1000));
+    var hourss=Math.floor((distance / (1000*60*60)));
    
 
     if (distance < 0) {
         return '(지나감)';
     } else {
-        return `전역일 까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 남음`;
+        return `전역일 까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 남음
+        ${hourss}시간 남음`;
     }
 }
 
@@ -79,12 +80,13 @@ setInterval(() => {
     var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
     var minutes = Math.floor(distance %(1000*60*60)/(1000*60));
     var seconds = Math.floor((distance % (1000*60)/1000));
-   
+    var hourss=Math.floor((distance / (1000*60*60)));
 
     if (distance < 0) {
         return '(지나감)';
     } else {
-        return `입대일 까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 남음`;
+        return `입대일 까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 남음
+        ${hourss}시간 남음`;
     }
 }
 setInterval(() => {
